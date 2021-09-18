@@ -58,9 +58,6 @@ export default class VigenereCipheringMachine {
   decrypt(str, keyBad) {
     if (!str || !keyBad) 
       throw new Error('Incorrect arguments!');
-    let str = args[0];
-    
-    let keyBad = args[1];
     let key = "";
     while(key.length < str.length)
       key += keyBad;
